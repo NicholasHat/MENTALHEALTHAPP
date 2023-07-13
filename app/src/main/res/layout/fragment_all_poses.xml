@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".allPoses">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/Relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/yogaTitle"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:background="@android:color/transparent"
+                android:contentDescription="backarrow"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:tint="#000000"
+                android:tintMode="src_in"
+                app:srcCompat="?attr/actionModeCloseDrawable"
+                tools:ignore="UseAppTint" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/plank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/boatpose">
+
+                <ImageView
+                    android:id="@+id/plankimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/plank" />
+
+                <TextView
+                    android:id="@+id/planktext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Plank Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/chaturanga"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/chaturangaimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/chaturanga" />
+
+                <TextView
+                    android:id="@+id/chaturangatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Chaturanga Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/upwarddog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/upwarddogimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/upwarddog" />
+
+                <TextView
+                    android:id="@+id/upwarddogtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Upward Dog Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dolphin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/dolphinimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/dolphin" />
+
+                <TextView
+                    android:id="@+id/dolphintext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Dolphin Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/reverseplank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/reverseplankimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/reverseplank" />
+
+                <TextView
+                    android:id="@+id/reverseplanktext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Reverse Plank Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tripod"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/tripodimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/tripod" />
+
+                <TextView
+                    android:id="@+id/tripodtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Tripod Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sugarcane"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/sugarcaneimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/sugarcane" />
+
+                <TextView
+                    android:id="@+id/sugarcanetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Sugar Cane Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/pyramid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/pyramidimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/pyramid" />
+
+                <TextView
+                    android:id="@+id/pyramidtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Pyramid Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/waterfall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/waterfallimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/waterfall" />
+
+                <TextView
+                    android:id="@+id/waterfalltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Waterfall Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/halfmoon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/halfmoonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/halfmoon" />
+
+                <TextView
+                    android:id="@+id/halfmoontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Half Moon Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/triangle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/triangleimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/trianglepose" />
+
+                <TextView
+                    android:id="@+id/triangletext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Triangle Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/warriorII"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/boatpose">
+
+                <ImageView
+                    android:id="@+id/warriorIIimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/warrior" />
+
+                <TextView
+                    android:id="@+id/warriorIItext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Warrior II Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/chairpose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/boatpose">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/chairpose" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Chair Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/boatpose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/boatpose" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Boat Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/crecentlunge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/crecentlungeimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/crecentlunge" />
+
+                <TextView
+                    android:id="@+id/crecentlungetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Crecent Lunge Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/forearmplank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/forearmplankimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/forearmplank" />
+
+                <TextView
+                    android:id="@+id/forearmplanktext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Forearm Plank Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/childpose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/childposeimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/childpose" />
+
+                <TextView
+                    android:id="@+id/childposetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Child Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/downwarddog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8sp">
+
+                <ImageView
+                    android:id="@+id/downwarddogimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/downwardfaceingdog" />
+
+                <TextView
+                    android:id="@+id/downwarddogtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orangegradient"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="Downward Dog Pose"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
