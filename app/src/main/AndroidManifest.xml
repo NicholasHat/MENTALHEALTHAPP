@@ -12,19 +12,10 @@
         android:theme="@style/Theme.Test"
         tools:targetApi="31">
         <activity
+            android:name=".journal"
+            android:exported="false" />
+        <activity
             android:name=".yogaexercise"
-            android:exported="false" />
-        <activity
-            android:name=".lowerbody"
-            android:exported="false" />
-        <activity
-            android:name=".upperbody"
-            android:exported="false" />
-        <activity
-            android:name=".fullbody"
-            android:exported="false" />
-        <activity
-            android:name=".yoga"
             android:exported="false" />
         <activity
             android:name=".ProblemsJournalActivity"

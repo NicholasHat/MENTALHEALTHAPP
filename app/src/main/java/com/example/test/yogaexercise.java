@@ -177,6 +177,7 @@ public class yogaexercise extends NavigationActivity {
         firstText = findViewById(R.id.currenttext);
         nextText = findViewById(R.id.nextuptext);
 
+        allposes.add(R.drawable.boatpose);
         allposes.add(R.drawable.chairpose);
         allposes.add(R.drawable.chaturanga);
         allposes.add(R.drawable.childpose);
@@ -195,7 +196,7 @@ public class yogaexercise extends NavigationActivity {
         allposes.add(R.drawable.warrior);
         allposes.add(R.drawable.waterfall);
         for(int j=0;j<5;j++) {
-            remove = rand.nextInt(17-j);
+            remove = rand.nextInt(18-j);
             usedPoses.add(allposes.get(remove));
             allposes.remove(remove);
             poses.add(poseNames[remove]);
@@ -206,24 +207,34 @@ public class yogaexercise extends NavigationActivity {
     private void fifthExercise() {
         firstPic.setImageResource(usedPoses.get(4));
         nextPic.setImageResource(usedPoses.get(4));
+        firstText.setText(poses.get(4));
+        nextText.setText(poses.get(4));
     }
     private void fourthExercise() {
         firstPic.setImageResource(usedPoses.get(3));
         nextPic.setImageResource(usedPoses.get(4));
+        firstText.setText(poses.get(3));
+        nextText.setText(poses.get(4));
     }
     private void thirdExercise() {
         firstPic.setImageResource(usedPoses.get(2));
         nextPic.setImageResource(usedPoses.get(3));
+        firstText.setText(poses.get(2));
+        nextText.setText(poses.get(3));
     }
 
     private void secondExercise() {
         firstPic.setImageResource(usedPoses.get(1));
         nextPic.setImageResource(usedPoses.get(2));
+        firstText.setText(poses.get(1));
+        nextText.setText(poses.get(2));
     }
 
     private void firstExercise() {
         firstPic.setImageResource(usedPoses.get(0));
         nextPic.setImageResource(usedPoses.get(1));
+        firstText.setText(poses.get(0));
+        nextText.setText(poses.get(1));
     }
 
     private void finishedExercise() {

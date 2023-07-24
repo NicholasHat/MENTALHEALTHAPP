@@ -6,16 +6,26 @@ import android.view.View;
 import android.widget.Button;
 
 public class activities extends NavigationActivity {
-    private Button yoga;
+    private Button yoga, journal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activities);
 
+        setMainClicker();
         setNewDayClicker();
         setActivitiesClicker();
         setDailyClicker();
         setButtonColor(R.id.activities);
+
+
+        journal = findViewById(R.id.problemButton);
+        journal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openJournal();
+            }
+        });
 
         yoga = findViewById(R.id.yogaButton);
         yoga.setOnClickListener(new View.OnClickListener() {
@@ -25,6 +35,11 @@ public class activities extends NavigationActivity {
             }
         });
 
+    }
+
+    private void openJournal() {
+        Intent I = new Intent(this, journal.class);
+        startActivity(I);
     }
 
     private void openYoga() {
