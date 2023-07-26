@@ -50,12 +50,13 @@ public class journal extends NavigationActivity {
 
     private void save(Editable t) {
         String s = journalText.getText().toString();
+        //not going into this try statement i think
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(getFilesDir() + FILE_NAME, true));
             PrintWriter w = new PrintWriter(getFilesDir() + FILE_NAME);
-            w.print("");
             writer.close();
             writer.write(s);
+            Toast.makeText(journalText.getContext(), s, Toast.LENGTH_LONG).show();
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -69,8 +70,11 @@ public class journal extends NavigationActivity {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(getFilesDir() + FILE_NAME));
             text = Files.readAllLines(Paths.get(getFilesDir() + FILE_NAME));
-            Toast.makeText(journalText.getContext(), text.size(), Toast.LENGTH_LONG).show();
-            //journalText.setText(text.get(0));
+            if(text.size() == 0) {
+                text.add("Temp");
+            }
+            //Toast.makeText(journalText.getContext(), t, Toast.LENGTH_LONG).show();
+            journalText.setText(text.get(0));
             //line 72 is problem
             reader.close();
         } catch (IOException e) {
